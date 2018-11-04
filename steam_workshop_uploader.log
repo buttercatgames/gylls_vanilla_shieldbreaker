@@ -1,0 +1,42 @@
+
+-------------------------------------------------------------------------------
+Parsing project file - C:\DarkestDungeon\mods\gylls_vanilla_shieldbreaker\project.xml
+Mod Data Directory = C:/DarkestDungeon/mods/gylls_vanilla_shieldbreaker/
+
+-------------------------------------------------------------------------------
+Processing Map Files files...
+
+-------------------------------------------------------------------------------
+Running Localization...
+Parsing localization/gv_shieldbreaker.string_table.xml
+
+Building Languages
+Exporting .loc files
+
+-------------------------------------------------------------------------------
+Searching for preview icon file C:/DarkestDungeon/mods/gylls_vanilla_shieldbreaker/preview_icon.png...FOUND!
+<UploadMode> - Set to copy_and_upload
+
+
+No unchanged files detected, directly uploading data directory.
+
+-------------------------------------------------------------------------------
+Modded files...
+
+heroes/shieldbreaker/shieldbreaker.ability.captivate.png
+heroes/shieldbreaker/shieldbreaker.ability.expose.png
+heroes/shieldbreaker/shieldbreaker.ability.puncture.png
+heroes/shieldbreaker/shieldbreaker.ability.sway.png
+heroes/shieldbreaker/shieldbreaker.art.darkest
+heroes/shieldbreaker/shieldbreaker.info.darkest
+shared/buffs/gv_heroes_shieldbreaker.buffs.json
+effects/gv_heroes_shieldbreaker.effects.darkest
+localization/1509926649_english.loc
+localization/gv_shieldbreaker.string_table.xml
+modfiles.txt
+preview_icon.png
+project.xml
+
+Submitting.................................................................................Submitted.
+Saving project file C:\DarkestDungeon\mods\gylls_vanilla_shieldbreaker\project.xml
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<language id="english">
+		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[%s vs %d%% HP or less]]></entry>
+		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[Crits Received: %+d%%]]></entry>
+		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[Cathartic Kill]]></entry>
+		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[Cathartic Kill]]></entry>
+		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[%s if Guarding]]></entry>
+		
+		<entry id="buff_stat_tooltip_ignore_protection"><![CDATA[%d%% PROT Piercing]]></entry>
+	</language>
+</root>
+

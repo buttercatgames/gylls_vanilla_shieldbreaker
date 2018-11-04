@@ -1,0 +1,68 @@
+// Shieldbreaker Effects
+//-------------------------
+
+// *Crit*
+effect: .name "GV_SB_Crit_Stress_Heal_Self" .target "performer" .chance 100% .healstress 2 .on_hit true .on_miss false
+effect: .name "GV_SB_Crit_Stress_Resist" .target "performer" .chance 100% .buff_ids "GV_SB_Crit_Stress_Resist" .buff_source_type bsrc_crit .duration 3 .on_hit true .on_miss false .apply_once true
+
+// Pierce
+effect: .name "GV_SB_Pierce_Buffs_1" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_SB_Blight_Killer_L" "GV_SB_Blight_Killer_H" "GV_SB_Blight_AP_1" .on_hit true .on_miss false
+effect: .name "GV_SB_Pierce_Buffs_2" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_SB_Blight_Killer_L" "GV_SB_Blight_Killer_H" "GV_SB_Blight_AP_2" .on_hit true .on_miss false
+effect: .name "GV_SB_Pierce_Buffs_3" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_SB_Blight_Killer_L" "GV_SB_Blight_Killer_H" "GV_SB_Blight_AP_3" .on_hit true .on_miss false
+effect: .name "GV_SB_Pierce_Buffs_4" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_SB_Blight_Killer_L" "GV_SB_Blight_Killer_H" "GV_SB_Blight_AP_4" .on_hit true .on_miss false
+effect: .name "GV_SB_Pierce_Buffs_5" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_SB_Blight_Killer_L" "GV_SB_Blight_Killer_H" "GV_SB_Blight_AP_5" .on_hit true .on_miss false
+
+// Puncture
+effect: .name "GV_SB_Debuff_1" .target "target" .chance 125% .buff_ids "GV_SB_Debuff_Prot_1" "GV_SB_Blight_Resist_1" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_SB_Debuff_2" .target "target" .chance 135% .buff_ids "GV_SB_Debuff_Prot_2" "GV_SB_Blight_Resist_2" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_SB_Debuff_3" .target "target" .chance 145% .buff_ids "GV_SB_Debuff_Prot_3" "GV_SB_Blight_Resist_3" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_SB_Debuff_4" .target "target" .chance 155% .buff_ids "GV_SB_Debuff_Prot_4" "GV_SB_Blight_Resist_4" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_SB_Debuff_5" .target "target" .chance 165% .buff_ids "GV_SB_Debuff_Prot_5" "GV_SB_Blight_Resist_5" .duration 3 .on_hit true .on_miss false
+
+effect: .name "GV_SB_Clear_Guarding" .target "target" .chance 100% .clearguarding 1 .on_hit true .on_miss false
+
+// Adder's Kiss
+
+
+// Impale
+effect: .name "GV_SB_Weak_Blight_1" .target "target" .chance 100% .dotPoison 1 .duration 3 .on_hit true .on_miss false .can_apply_on_death true
+effect: .name "GV_SB_Weak_Blight_2" .target "target" .chance 110% .dotPoison 1 .duration 3 .on_hit true .on_miss false .can_apply_on_death true
+effect: .name "GV_SB_Weak_Blight_3" .target "target" .chance 120% .dotPoison 1 .duration 3 .on_hit true .on_miss false .can_apply_on_death true
+effect: .name "GV_SB_Weak_Blight_4" .target "target" .chance 130% .dotPoison 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true
+effect: .name "GV_SB_Weak_Blight_5" .target "target" .chance 140% .dotPoison 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true
+
+effect: .name "GV_SB_Self_Blight_1" .target "performer" .chance 100% .dotPoison 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
+effect: .name "GV_SB_Self_Blight_2" .target "performer" .chance 110% .dotPoison 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
+effect: .name "GV_SB_Self_Blight_3" .target "performer" .chance 120% .dotPoison 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
+effect: .name "GV_SB_Self_Blight_4" .target "performer" .chance 130% .dotPoison 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
+effect: .name "GV_SB_Self_Blight_5" .target "performer" .chance 140% .dotPoison 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
+
+// Expose
+effect: .name "GV_SB_CK_Buffs_1" .target "performer" .chance 100% .buff_ids "GV_SB_Acc_Vs_Low_1" "GV_SB_Crit_Vs_Low" "GV_SB_Stress_Healing_Received" "GV_SB_CK_Dmg_L" "GV_SB_CK_Dmg_H" .duration 1 .on_hit true .on_miss true
+effect: .name "GV_SB_CK_Buffs_2" .target "performer" .chance 100% .buff_ids "GV_SB_Acc_Vs_Low_2" "GV_SB_Crit_Vs_Low" "GV_SB_Stress_Healing_Received" "GV_SB_CK_Dmg_L" "GV_SB_CK_Dmg_H" .duration 1 .on_hit true .on_miss true
+effect: .name "GV_SB_CK_Buffs_3" .target "performer" .chance 100% .buff_ids "GV_SB_Acc_Vs_Low_3" "GV_SB_Crit_Vs_Low" "GV_SB_Stress_Healing_Received" "GV_SB_CK_Dmg_L" "GV_SB_CK_Dmg_H" .duration 1 .on_hit true .on_miss true
+effect: .name "GV_SB_CK_Buffs_4" .target "performer" .chance 100% .buff_ids "GV_SB_Acc_Vs_Low_4" "GV_SB_Crit_Vs_Low" "GV_SB_Stress_Healing_Received" "GV_SB_CK_Dmg_L" "GV_SB_CK_Dmg_H" .duration 1 .on_hit true .on_miss true
+effect: .name "GV_SB_CK_Buffs_5" .target "performer" .chance 100% .buff_ids "GV_SB_Acc_Vs_Low_5" "GV_SB_Crit_Vs_Low" "GV_SB_Stress_Healing_Received" "GV_SB_CK_Dmg_L" "GV_SB_CK_Dmg_H" .duration 1 .on_hit true .on_miss true
+
+// Captivate
+
+
+// Serpent Sway
+effect: .name "GV_SB_Self_Buff" .target "performer" .chance 100% .buff_ids "GV_SB_Dodge" .duration 2 .on_hit true .on_miss false
+
+effect: .name "GV_SB_Stress_Self_1" .target "performer" .chance 100% .stress 4 .on_hit true .on_miss false .queue true
+effect: .name "GV_SB_Stress_Self_2" .target "performer" .chance 100% .stress 5 .on_hit true .on_miss false .queue true
+effect: .name "GV_SB_Stress_Self_3" .target "performer" .chance 100% .stress 6 .on_hit true .on_miss false .queue true
+
+effect: .name "GV_SB_Stress_Heal_Others_1" .target "performer_group_other" .chance 100% .healstress 4 .on_hit true .on_miss false
+effect: .name "GV_SB_Stress_Heal_Others_2" .target "performer_group_other" .chance 100% .healstress 5 .on_hit true .on_miss false
+effect: .name "GV_SB_Stress_Heal_Others_3" .target "performer_group_other" .chance 100% .healstress 6 .on_hit true .on_miss false
+
+effect: .name "GV_SB_Stress_Heal_Others_Maybe" .target "performer_group_other" .chance 50% .healstress 1 .on_hit true .on_miss false
+
+/* Self blight */
+effect: .name "GV_SB_Self_Blight_1" .target "performer" .chance 100% .dotPoison 1 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .apply_once true
+
+// Transforms for Free Actions
+effect: .name "GV_XF_1" .target "performer" .set_mode pre .chance 100% .on_hit true .on_miss true .queue true .has_description false
+effect: .name "GV_XF_2" .target "performer" .set_mode post .chance 100% .on_hit true .on_miss true .queue false .has_description false

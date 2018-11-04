@@ -1,0 +1,76 @@
+resistances: .stun 30% .poison 20% .bleed 30% .disease 30% .move 30% .debuff 30% .death_blow 67% .trap 20%
+
+crit: .effects "GV_SB_Crit_Stress_Resist"
+
+weapon: .name "shieldbreaker_weapon_0" .atk 0% .dmg 5 10 .crit 6% .spd 5
+weapon: .name "shieldbreaker_weapon_1" .atk 0% .dmg 6 12 .crit 7% .spd 5 .upgradeRequirementCode 0
+weapon: .name "shieldbreaker_weapon_2" .atk 0% .dmg 7 14 .crit 8% .spd 6 .upgradeRequirementCode 1
+weapon: .name "shieldbreaker_weapon_3" .atk 0% .dmg 8 16 .crit 9% .spd 6 .upgradeRequirementCode 2
+weapon: .name "shieldbreaker_weapon_4" .atk 0% .dmg 9 18 .crit 10% .spd 7 .upgradeRequirementCode 3
+
+armour: .name "shieldbreaker_armour_0" .def 10% .prot 0 .hp 22 .spd 0
+armour: .name "shieldbreaker_armour_1" .def 15% .prot 0 .hp 26 .spd 0 .upgradeRequirementCode 0
+armour: .name "shieldbreaker_armour_2" .def 20% .prot 0 .hp 30 .spd 0 .upgradeRequirementCode 1
+armour: .name "shieldbreaker_armour_3" .def 25% .prot 0 .hp 34 .spd 0 .upgradeRequirementCode 2
+armour: .name "shieldbreaker_armour_4" .def 30% .prot 0 .hp 38 .spd 0 .upgradeRequirementCode 3
+
+// Pierce
+combat_skill: .id "pierce" .level 0 .type "melee" .atk 90% .dmg -20% .crit 2% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_1" .generation_guaranteed true
+combat_skill: .id "pierce" .level 1 .type "melee" .atk 95% .dmg -20% .crit 3% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_2"
+combat_skill: .id "pierce" .level 2 .type "melee" .atk 100% .dmg -20% .crit 4% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_3"
+combat_skill: .id "pierce" .level 3 .type "melee" .atk 105% .dmg -20% .crit 5% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_4"
+combat_skill: .id "pierce" .level 4 .type "melee" .atk 110% .dmg -20% .crit 6% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_5"
+
+// Adder's Kiss
+combat_skill: .id "adders_kiss" .level 0 .type "melee" .atk 90% .dmg 0% .crit 5% .move 1 0 .launch 1 .target 12 .is_crit_valid True .effect "SB Adder Blight 1"
+combat_skill: .id "adders_kiss" .level 1 .type "melee" .atk 95% .dmg 0% .crit 6% .move 1 0 .launch 1 .target 12 .is_crit_valid True .effect "SB Adder Blight 2"
+combat_skill: .id "adders_kiss" .level 2 .type "melee" .atk 100% .dmg 0% .crit 7% .move 1 0 .launch 1 .target 12 .is_crit_valid True .effect "SB Adder Blight 3"
+combat_skill: .id "adders_kiss" .level 3 .type "melee" .atk 105% .dmg 0% .crit 8% .move 1 0 .launch 1 .target 12 .is_crit_valid True .effect "SB Adder Blight 4"
+combat_skill: .id "adders_kiss" .level 4 .type "melee" .atk 110% .dmg 0% .crit 9% .move 1 0 .launch 1 .target 12 .is_crit_valid True .effect "SB Adder Blight 5"
+
+// Impale
+combat_skill: .id "spearing" .level 0 .type "ranged" .atk 85% .dmg -60% .crit -4% .move 1 0 .launch 1 .target ~1234 .is_crit_valid True .effect "Destealth" "GV_SB_Weak_Blight_1" "GV_SB_Self_Blight_1"
+combat_skill: .id "spearing" .level 1 .type "ranged" .atk 90% .dmg -60% .crit -3% .move 1 0 .launch 1 .target ~1234 .is_crit_valid True .effect "Destealth" "GV_SB_Weak_Blight_2" "GV_SB_Self_Blight_2"
+combat_skill: .id "spearing" .level 2 .type "ranged" .atk 95% .dmg -60% .crit -2% .move 1 0 .launch 1 .target ~1234 .is_crit_valid True .effect "Destealth" "GV_SB_Weak_Blight_3" "GV_SB_Self_Blight_3"
+combat_skill: .id "spearing" .level 3 .type "ranged" .atk 100% .dmg -60% .crit -1% .move 1 0 .launch 1 .target ~1234 .is_crit_valid True .effect "Destealth" "GV_SB_Weak_Blight_4" "GV_SB_Self_Blight_4"
+combat_skill: .id "spearing" .level 4 .type "ranged" .atk 105% .dmg -60% .crit 0% .move 1 0 .launch 1 .target ~1234 .is_crit_valid True .effect "Destealth" "GV_SB_Weak_Blight_5" "GV_SB_Self_Blight_5"
+
+// Puncture
+combat_skill: .id "break_guard" .level 0 .type "melee" .atk 95% .dmg -40% .crit 0% .move 0 1 .launch 432 .target 123 .is_crit_valid True .effect "GV_SB_Debuff_1"
+combat_skill: .id "break_guard" .level 1 .type "melee" .atk 100% .dmg -40% .crit 1% .move 0 1 .launch 432 .target 123 .is_crit_valid True .effect "GV_SB_Debuff_2"
+combat_skill: .id "break_guard" .level 2 .type "melee" .atk 105% .dmg -40% .crit 2% .move 0 1 .launch 432 .target 123 .is_crit_valid True .effect "GV_SB_Debuff_3"
+combat_skill: .id "break_guard" .level 3 .type "melee" .atk 110% .dmg -40% .crit 3% .move 0 1 .launch 432 .target 123 .is_crit_valid True .effect "GV_SB_Debuff_4"
+combat_skill: .id "break_guard" .level 4 .type "melee" .atk 115% .dmg -40% .crit 4% .move 0 1 .launch 432 .target 123 .is_crit_valid True .effect "GV_SB_Debuff_5"
+
+// Captivate
+combat_skill: .id "single_out" .level 0 .type "ranged" .atk 95% .dmg -80% .crit 0% .move 1 0 .launch 321 .target 234 .is_crit_valid True .effect "Pull 2A" "Blight 1"
+combat_skill: .id "single_out" .level 1 .type "ranged" .atk 100% .dmg -80% .crit 1% .move 1 0 .launch 321 .target 234 .is_crit_valid True .effect "Pull 2B" "Blight 2"
+combat_skill: .id "single_out" .level 2 .type "ranged" .atk 105% .dmg -80% .crit 2% .move 1 0 .launch 321 .target 234 .is_crit_valid True .effect "Pull 2C" "Blight 3"
+combat_skill: .id "single_out" .level 3 .type "ranged" .atk 110% .dmg -80% .crit 3% .move 1 0 .launch 321 .target 234 .is_crit_valid True .effect "Pull 2D" "Blight 4"
+combat_skill: .id "single_out" .level 4 .type "ranged" .atk 115% .dmg -80% .crit 4% .move 1 0 .launch 321 .target 234 .is_crit_valid True .effect "Pull 2E" "Blight 5"
+
+// Expose
+combat_skill: .id "expose" .level 0 .launch 4321 .is_crit_valid False .effect "GV_SB_CK_Buffs_1" .is_continue_turn true .per_battle_limit 1 .is_stall_invalidating false .refresh_after_each_wave true
+combat_skill: .id "expose" .level 1 .launch 4321 .is_crit_valid False .effect "GV_SB_CK_Buffs_2" .is_continue_turn true .per_battle_limit 1 .is_stall_invalidating false .refresh_after_each_wave true
+combat_skill: .id "expose" .level 2 .launch 4321 .is_crit_valid False .effect "GV_SB_CK_Buffs_3" .is_continue_turn true .per_battle_limit 1 .is_stall_invalidating false .refresh_after_each_wave true
+combat_skill: .id "expose" .level 3 .launch 4321 .is_crit_valid False .effect "GV_SB_CK_Buffs_4" .is_continue_turn true .per_battle_limit 1 .is_stall_invalidating false .refresh_after_each_wave true
+combat_skill: .id "expose" .level 4 .launch 4321 .is_crit_valid False .effect "GV_SB_CK_Buffs_5" .is_continue_turn true .per_battle_limit 1 .is_stall_invalidating false .refresh_after_each_wave true
+
+// Serpent Sway
+combat_skill: .id "serpents_sway" .level 0 .move 0 1 .launch 432 .target .is_crit_valid False .effect "GV_SB_Self_Buff" "GV_SB_Stress_Self_1" "GV_SB_Stress_Heal_Others_1" .is_stall_invalidating false
+combat_skill: .id "serpents_sway" .level 1 .move 0 1 .launch 432 .target .is_crit_valid False .effect "GV_SB_Self_Buff" "GV_SB_Stress_Self_1" "GV_SB_Stress_Heal_Others_1" "GV_SB_Stress_Heal_Others_Maybe" .is_stall_invalidating false
+combat_skill: .id "serpents_sway" .level 2 .move 0 1 .launch 432 .target .is_crit_valid False .effect "GV_SB_Self_Buff" "GV_SB_Stress_Self_2" "GV_SB_Stress_Heal_Others_2" .is_stall_invalidating false
+combat_skill: .id "serpents_sway" .level 3 .move 0 1 .launch 432 .target .is_crit_valid False .effect "GV_SB_Self_Buff" "GV_SB_Stress_Self_2" "GV_SB_Stress_Heal_Others_2" "GV_SB_Stress_Heal_Others_Maybe" .is_stall_invalidating false
+combat_skill: .id "serpents_sway" .level 4 .move 0 1 .launch 432 .target .is_crit_valid False .effect "GV_SB_Self_Buff" "GV_SB_Stress_Self_3" "GV_SB_Stress_Heal_Others_3" .is_stall_invalidating false
+
+combat_move_skill: .id "move" .level 0 .type "move" .move 2 2 .launch 4321
+
+tag: .id "heavy"
+tag: .id "non-religious"
+tag: .id "training_ring"
+
+deaths_door: .buffs deathsdoorACCDebuff deathsdoorDMGLowDebuff deathsdoorDMGHighDebuff deathsdoorSPDDebuff deathsdoorSRDebuff .recovery_buffs mortalityACCDebuff mortalityDMGLowDebuff mortalityDMGHighDebuff mortalitySPDDebuff mortalitySRDebuff .recovery_heart_attack_buffs heartattackACCDebuff heartattackDMGLowDebuff heartattackDMGHighDebuff heartattackSPDDebuff heartattackSRDebuff
+controlled: .target_rank 2
+id_index: .index 17
+skill_selection: .can_select_combat_skills true .number_of_selected_combat_skills_max 4
+generation: .is_generation_enabled true .number_of_positive_quirks_min 1 .number_of_positive_quirks_max 2 .number_of_negative_quirks_min 1 .number_of_negative_quirks_max 2 .number_of_class_specific_camping_skills 2 .number_of_shared_camping_skills 1 .number_of_random_combat_skills 4 .number_of_cards_in_deck 5 .card_chance 1.0

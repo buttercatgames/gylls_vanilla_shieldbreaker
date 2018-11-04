@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<PreviewIconFile>preview_icon.png</PreviewIconFile>
+	<ItemDescriptionShort>Gyll’s Vanilla: Shieldbreaker reworks the Shieldbreaker by giving her a stress-healing build as well as simplifying and focusing her damage and utility skills.</ItemDescriptionShort>
+	<ModDataPath>C:/DarkestDungeon/mods/gylls_vanilla_shieldbreaker/</ModDataPath>
+	<Title>Gyll&apos;s Vanilla: Shieldbreaker</Title>
+	<Language>english</Language>
+	<UpdateDetails/>
+	<Visibility>public</Visibility>
+	<UploadMode>copy_and_upload</UploadMode>
+	<VersionMajor>0</VersionMajor>
+	<VersionMinor>0</VersionMinor>
+	<TargetBuild>21142</TargetBuild>
+	<Tags>
+		<Tags>Class Tweaks</Tags>
+	</Tags>
+	<ItemDescription>[b]Gyll’s Vanilla: Shieldbreaker[/b] reworks the Shieldbreaker by giving her a stress-healing build as well as simplifying and focusing her damage and utility skills.
+
+It is an extension of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1385283735]Gyll&apos;s Vanilla: Heroes[/url] which redesigns or rebalances all 15 base game heroes.
+
+[h1]Design Goals for the Shieldbreaker[/h1]
+- Provide a stress-healing alternative for blight-based groups
+- Tone down Pierce while still maintaining her identity as a tank-killer
+- Simplify skills and ensure each skill has a clear purpose
+- Match the animations more closely to the effects
+
+[h1]Changelog[/h1]
+[url=https://dd-tooltips.com/shieldbreaker]Click to view the changelog, including tooltips and design notes[/url]
+
+[h1]About Gyll’s Vanilla[/h1]
+[b]Gyll’s Vanilla[/b] is a collection of mods for Darkest Dungeon, each of which redesigns a single aspect of the game. These mods are balanced against the vanilla base game and designed for maximum compatibility, creating a solid foundation for your modded campaigns.
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1407664617]Click to view the full collection[/url]
+
+[h1]Disclaimer[/h1]
+[i]Gyll’s Vanilla: Shieldbreaker is not an official Red Hook Studios product or product modification, and Red Hook Studios Inc. is not responsible in any way for changes or damages that may result from using the mod. Furthermore, “Darkest Dungeon” and the Darkest Dungeon logo are trademarks of Red Hook Studios Inc. All content in the game is Copyright Red Hook Studios Inc. All rights reserved.[/i]</ItemDescription>
+	<PublishedFileId>1509926649</PublishedFileId>
+</project>
+
