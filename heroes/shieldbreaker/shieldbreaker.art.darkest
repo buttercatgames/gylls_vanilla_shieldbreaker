@@ -16,9 +16,9 @@ combat_skill: .id "pierce" .icon "one" .anim "attack_pierce" .fx "pierce" .targc
 combat_skill: .id "break_guard" .icon "puncture" .anim "attack_break" .fx "break_guard" .targchestfx "blood_splatter" .condensed_tooltip_stats true
 combat_skill: .id "adders_kiss" .icon "three" .anim "attack_kiss" .fx "adders_kiss" .targchestfx "adders_kiss_target" .condensed_tooltip_stats true
 combat_skill: .id "spearing" .icon "four" .anim "attack_spear" .fx "spearing" .targchestfx "spearing_target" .area_pos_offset 100 0 .target_area_pos_offset -100 20 .condensed_tooltip_stats true .condensed_tooltip_effects true .condensed_tooltip_effects_per_line 1
-combat_skill: .id "expose" .icon "expose" .anim "defend" .targchestfx "expose_target" .condensed_tooltip_stats true
+combat_skill: .id "expose" .icon "five" .anim "defend" .targchestfx "expose_target" .condensed_tooltip_stats true
 combat_skill: .id "single_out" .icon "captivate" .anim "attack_single" .fx "single_out" .targchestfx "single_out_target" .condensed_tooltip_stats true
-combat_skill: .id "serpents_sway" .icon "sway" .anim "attack_sway" .fx "serpents_sway" .area_pos_offset 0 -25 .condensed_tooltip_stats true .condensed_tooltip_effects true
+combat_skill: .id "serpents_sway" .icon "sway" .anim "attack_sway" .fx "serpents_sway" .area_pos_offset 0 -25 .condensed_tooltip_stats true .condensed_tooltip_effects true .condensed_tooltip_effects_per_line 2
 
 combat_move_skill: .id "move" .icon "generic_move" .anim "idle"
 

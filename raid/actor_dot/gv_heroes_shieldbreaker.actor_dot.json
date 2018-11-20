@@ -1,0 +1,21 @@
+{
+    "entries":
+    [
+        {
+            "id": "healstress_on_kill",
+            "update_duration_type": "after_turn_attack_kill",
+            "duration_elements": 
+            [
+                {
+                    "completion_chance": 1.00,
+                    "completion_effects":
+                    [
+                        "GV_SB_Stress_Heal_Self"
+                    ],
+                    "increment_effects":
+                    []
+                }
+            ]
+        }
+    ]
+}

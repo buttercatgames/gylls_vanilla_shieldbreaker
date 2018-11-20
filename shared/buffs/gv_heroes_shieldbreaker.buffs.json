@@ -2,6 +2,19 @@
    "buffs":
    [
       {
+         "id" : "GV_SB_No_Blight",
+         "stat_type" : "poison_chance",
+         "stat_sub_type" : "",
+         "amount" : -2.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      }, 
+      {
          "id" : "GV_SB_Extra_Stress_Heal",
          "stat_type" : "stress_heal_received_percent",
          "stat_sub_type" : "",
@@ -13,6 +26,46 @@
             "float" : 0,
             "string" : ""
          }
+      },
+      {
+         "id" : "GV_SB_Extra_Stress_Heal_Crits",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "hero_crit",
+         "amount" : 0.6,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Extra_Stress_Heal_Kills",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "hero_killing_blow",
+         "amount" : 0.6,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Disable_Sway",
+         "stat_type" : "disable_combat_skill_attribute",
+         "stat_sub_type" : "stress",
+         "amount" : 1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "is_clear_debuff_valid": false
       },
       {
          "id" : "GV_SB_Debuff_Prot_1",
@@ -314,10 +367,62 @@
          }
       },
   	  {
-         "id" : "GV_SB_Dodge",
+         "id" : "GV_SB_Dodge_1",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "defense_rating",
          "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+  	  {
+         "id" : "GV_SB_Dodge_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "defense_rating",
+         "amount" : 0.11,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+  	  {
+         "id" : "GV_SB_Dodge_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "defense_rating",
+         "amount" : 0.12,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+  	  {
+         "id" : "GV_SB_Dodge_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "defense_rating",
+         "amount" : 0.13,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+  	  {
+         "id" : "GV_SB_Dodge_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "defense_rating",
+         "amount" : 0.15,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -443,16 +548,595 @@
             "string" : ""
          }
 	 },
+
 	 {
-         "id" : "GV_SB_Crit_Vs_Low",
+         "id" : "GV_SB_Crit_Vs_Low_1_1",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "crit_chance",
-         "amount" : 1.0,
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.9,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.8,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.7,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.6,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
          "remove_if_not_active" : false,
          "rule_type" : "target_hpbelow",
          "is_false_rule" : false,
          "rule_data" : {
             "float" : 0.5,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_6",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_7",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.3,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_1_8",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.05,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	  
+	  
+	  	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_1",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.9,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.8,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.7,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.6,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.5,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_6",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_7",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.3,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_2_8",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.06,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	  
+	  	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_1",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.9,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.8,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.7,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.6,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.5,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_6",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_7",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.3,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_3_8",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.07,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	  
+	  	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_1",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.9,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.8,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.7,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.6,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.5,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_6",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_7",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.3,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_4_8",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.08,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	  
+	  	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_1",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.9,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.8,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.7,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.6,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.5,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_6",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_7",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.3,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Crit_Vs_Low_5_8",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "target_hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         },
+		 "has_description": false
+      },
+	 {
+         "id" : "GV_SB_Mute_Stress_Heal",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : -1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	 {
+         "id" : "GV_SB_Stress_Healing_Done_1",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : 0.4,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
             "string" : ""
          }
       },
@@ -553,7 +1237,7 @@
          "id" : "GV_SB_Crit_Stress_Resist",
          "stat_type" : "stress_dmg_received_percent",
          "stat_sub_type" : "",
-         "amount" : -0.25,
+         "amount" : -0.33,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -566,7 +1250,335 @@
          "id" : "GV_SB_Stress_Healing_Received",
          "stat_type" : "stress_heal_received_percent",
          "stat_sub_type" : "",
+         "amount" : 2.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+  	  {
+         "id" : "GV_Tooltip_SB_Cannot_Crit",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_cannot_crit",
+         "amount" : -0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Bleed_Resist_1",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "bleed",
+         "amount" : 0.20,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Prot_1",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "protection_rating",
+         "amount" : 0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Prot_2",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "protection_rating",
+         "amount" : 0.12,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Prot_3",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "protection_rating",
+         "amount" : 0.15,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Prot_4",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "protection_rating",
+         "amount" : 0.17,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Prot_5",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "protection_rating",
+         "amount" : 0.20,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Bleed_Resist_2",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "bleed",
+         "amount" : 0.25,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Bleed_Resist_3",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "bleed",
+         "amount" : 0.30,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Bleed_Resist_4",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "bleed",
+         "amount" : 0.35,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Bleed_Resist_5",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "bleed",
+         "amount" : 0.40,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Blight_Resist_1",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "poison",
+         "amount" : 0.20,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Blight_Resist_2",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "poison",
+         "amount" : 0.25,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Blight_Resist_3",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "poison",
+         "amount" : 0.30,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Blight_Resist_4",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "poison",
+         "amount" : 0.35,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Anticipate_Blight_Resist_5",
+         "stat_type" : "resistance",
+         "stat_sub_type" : "poison",
+         "amount" : 0.40,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_SB_Sway_Crit_Kiss_1",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "crit_chance",
          "amount" : 1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_SB_Disable_Tag",
+         "stat_type" : "disable_combat_skill_attribute",
+         "stat_sub_type" : "tag",
+         "amount" : 1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "is_clear_debuff_valid": false,
+		 "has_description": false
+      },
+	  {
+         "id" : "GV_SB_No_Crit_Self",
+         "stat_type" : "hp_dot_poison_duration_received_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.4,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_SB_Disable_Tag_Tooltip",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_disable_tag",
+         "amount" : -0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "is_clear_debuff_valid": false
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_CK_Crit_Buffs_1",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_crit_buffs_1",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_CK_Crit_Buffs_2",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_crit_buffs_2",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_CK_Crit_Buffs_3",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_crit_buffs_3",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_CK_Crit_Buffs_4",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_crit_buffs_4",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_CK_Crit_Buffs_5",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "shieldbreaker_crit_buffs_5",
+         "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
