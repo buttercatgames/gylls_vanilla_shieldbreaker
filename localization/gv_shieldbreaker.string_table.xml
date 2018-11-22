@@ -5,7 +5,7 @@
 		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[Crits Received: %+d%%]]></entry>
 		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[Cathartic Kill]]></entry>
 		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[Cathartic Kill]]></entry>
-		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[%s if Guarding]]></entry>
+		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[%s if {colour_start|guard}Guarding{colour_end}]]></entry>
 		
 		<entry id="buff_stat_tooltip_ignore_protection"><![CDATA[%d%% PROT Piercing]]></entry>
 		

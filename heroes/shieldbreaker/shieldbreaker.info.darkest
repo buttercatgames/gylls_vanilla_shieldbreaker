@@ -8,11 +8,11 @@ weapon: .name "shieldbreaker_weapon_2" .atk 0% .dmg 7 14 .crit 8% .spd 6 .upgrad
 weapon: .name "shieldbreaker_weapon_3" .atk 0% .dmg 8 16 .crit 9% .spd 6 .upgradeRequirementCode 2
 weapon: .name "shieldbreaker_weapon_4" .atk 0% .dmg 9 18 .crit 10% .spd 7 .upgradeRequirementCode 3
 
-armour: .name "shieldbreaker_armour_0" .def 10% .prot 0 .hp 22 .spd 0
-armour: .name "shieldbreaker_armour_1" .def 15% .prot 0 .hp 26 .spd 0 .upgradeRequirementCode 0
-armour: .name "shieldbreaker_armour_2" .def 20% .prot 0 .hp 30 .spd 0 .upgradeRequirementCode 1
-armour: .name "shieldbreaker_armour_3" .def 25% .prot 0 .hp 34 .spd 0 .upgradeRequirementCode 2
-armour: .name "shieldbreaker_armour_4" .def 30% .prot 0 .hp 38 .spd 0 .upgradeRequirementCode 3
+armour: .name "shieldbreaker_armour_0" .def 10% .prot 0 .hp 24 .spd 0
+armour: .name "shieldbreaker_armour_1" .def 15% .prot 0 .hp 28 .spd 0 .upgradeRequirementCode 0
+armour: .name "shieldbreaker_armour_2" .def 20% .prot 0 .hp 32 .spd 0 .upgradeRequirementCode 1
+armour: .name "shieldbreaker_armour_3" .def 25% .prot 0 .hp 36 .spd 0 .upgradeRequirementCode 2
+armour: .name "shieldbreaker_armour_4" .def 30% .prot 0 .hp 40 .spd 0 .upgradeRequirementCode 3
 
 // Pierce
 combat_skill: .id "pierce" .level 0 .type "melee" .atk 90% .dmg -20% .crit 2% .move 0 1 .launch 321 .target 123 .is_crit_valid True .effect "GV_SB_Pierce_Buffs_1" "GV_SB_Mute_Stress_Heal" "GV_SB_Stress_Heal_Self" .generation_guaranteed true
