@@ -1,0 +1,7 @@
+{
+    "event_guid_overrides":
+    [
+		{"event_id": "event:/char/ally/shieldbreaker_riposte1",                   "guid_override":"{ccdee18a-fdb1-4afe-9b68-7f41e228cfe3}"},
+        {"event_id": "event:/char/ally/shieldbreaker_riposte1_miss",              "guid_override":"{1ad1d94c-e58b-4be5-932b-655447b342d0}"}
+	]
+}

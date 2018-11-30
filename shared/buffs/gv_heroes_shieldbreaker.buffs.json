@@ -2,6 +2,34 @@
    "buffs":
    [
       {
+         "id" : "GV_SB_Exhaust_Dodge",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "defense_rating",
+         "amount" : -0.10,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "is_clear_debuff_valid": false
+      },
+      {
+         "id" : "GV_SB_Exhaust_Spd",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "speed_rating",
+         "amount" : -5,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "is_clear_debuff_valid": false
+      },
+      {
          "id" : "GV_SB_No_Blight",
          "stat_type" : "poison_chance",
          "stat_sub_type" : "",
@@ -28,10 +56,10 @@
          }
       },
       {
-         "id" : "GV_SB_Extra_Stress_Heal_Crits",
-         "stat_type" : "stress_heal_percent",
+         "id" : "GV_SB_Extra_Stress_Heal_Crits_1",
+         "stat_type" : "stress_heal_received_percent",
          "stat_sub_type" : "hero_crit",
-         "amount" : 0.6,
+         "amount" : 0.66,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -41,10 +69,10 @@
          }
       },
       {
-         "id" : "GV_SB_Extra_Stress_Heal_Kills",
-         "stat_type" : "stress_heal_percent",
+         "id" : "GV_SB_Extra_Stress_Heal_Kills_1",
+         "stat_type" : "stress_heal_received_percent",
          "stat_sub_type" : "hero_killing_blow",
-         "amount" : 0.6,
+         "amount" : 0.66,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -71,7 +99,7 @@
          "id" : "GV_SB_Debuff_Prot_1",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.15,
+         "amount" : -0.25,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -84,7 +112,7 @@
          "id" : "GV_SB_Debuff_Prot_2",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.17,
+         "amount" : -0.33,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -97,7 +125,7 @@
          "id" : "GV_SB_Debuff_Prot_3",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.20,
+         "amount" : -0.40,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -110,7 +138,7 @@
          "id" : "GV_SB_Debuff_Prot_4",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.22,
+         "amount" : -0.45,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -123,7 +151,7 @@
          "id" : "GV_SB_Debuff_Prot_5",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.25,
+         "amount" : -0.50,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -133,10 +161,10 @@
          }
       },
       {
-         "id" : "GV_SB_Debuff_Prot_More_1",
+         "id" : "GV_SB_Debuff_Prot_More",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.15,
+         "amount" : -0.25,
          "remove_if_not_active" : false,
          "rule_type" : "is_guarding",
          "is_false_rule" : false,
@@ -149,7 +177,7 @@
          "id" : "GV_SB_Debuff_Prot_More_2",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.17,
+         "amount" : -0.33,
          "remove_if_not_active" : false,
          "rule_type" : "is_guarding",
          "is_false_rule" : false,
@@ -162,7 +190,7 @@
          "id" : "GV_SB_Debuff_Prot_More_3",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.20,
+         "amount" : -0.40,
          "remove_if_not_active" : false,
          "rule_type" : "is_guarding",
          "is_false_rule" : false,
@@ -175,7 +203,7 @@
          "id" : "GV_SB_Debuff_Prot_More_4",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.22,
+         "amount" : -0.45,
          "remove_if_not_active" : false,
          "rule_type" : "is_guarding",
          "is_false_rule" : false,
@@ -188,7 +216,7 @@
          "id" : "GV_SB_Debuff_Prot_More_5",
          "stat_type" : "combat_stat_add",
          "stat_sub_type" : "protection_rating",
-         "amount" : -0.25,
+         "amount" : -0.50,
          "remove_if_not_active" : false,
          "rule_type" : "is_guarding",
          "is_false_rule" : false,
@@ -201,7 +229,7 @@
          "id" : "GV_SB_Blight_Resist_1",
          "stat_type" : "resistance",
          "stat_sub_type" : "poison",
-         "amount" : -0.40,
+         "amount" : -0.20,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -214,7 +242,7 @@
          "id" : "GV_SB_Blight_Resist_2",
          "stat_type" : "resistance",
          "stat_sub_type" : "poison",
-         "amount" : -0.45,
+         "amount" : -0.25,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -227,7 +255,7 @@
          "id" : "GV_SB_Blight_Resist_3",
          "stat_type" : "resistance",
          "stat_sub_type" : "poison",
-         "amount" : -0.50,
+         "amount" : -0.30,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -240,7 +268,7 @@
          "id" : "GV_SB_Blight_Resist_4",
          "stat_type" : "resistance",
          "stat_sub_type" : "poison",
-         "amount" : -0.55,
+         "amount" : -0.35,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -253,7 +281,7 @@
          "id" : "GV_SB_Blight_Resist_5",
          "stat_type" : "resistance",
          "stat_sub_type" : "poison",
-         "amount" : -0.6,
+         "amount" : -0.4,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -1118,7 +1146,7 @@
          "id" : "GV_SB_Mute_Stress_Heal",
          "stat_type" : "stress_heal_percent",
          "stat_sub_type" : "",
-         "amount" : -1.0,
+         "amount" : -2.0,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -1127,17 +1155,69 @@
             "string" : ""
          }
       },
-	 {
-         "id" : "GV_SB_Stress_Healing_Done_1",
+ 	  {
+         "id" : "GV_SB_SH_Done_Pierce_1",
          "stat_type" : "stress_heal_percent",
          "stat_sub_type" : "",
-         "amount" : 0.4,
+         "amount" : 1.3,
          "remove_if_not_active" : false,
-         "rule_type" : "always",
+         "rule_type" : "skill",
          "is_false_rule" : false,
          "rule_data" : {
             "float" : 0,
-            "string" : ""
+            "string" : "pierce"
+         }
+      },
+ 	  {
+         "id" : "GV_SB_SH_Done_Kiss_1",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.3,
+         "remove_if_not_active" : false,
+         "rule_type" : "skill",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : "adders_kiss"
+         }
+      },
+ 	  {
+         "id" : "GV_SB_SH_Done_Impale_1",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.3,
+         "remove_if_not_active" : false,
+         "rule_type" : "skill",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : "spearing"
+         }
+      },
+ 	  {
+         "id" : "GV_SB_SH_Done_Puncture_1",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.3,
+         "remove_if_not_active" : false,
+         "rule_type" : "skill",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : "break_guard"
+         }
+      },
+ 	  {
+         "id" : "GV_SB_SH_Done_Captivate_1",
+         "stat_type" : "stress_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.3,
+         "remove_if_not_active" : false,
+         "rule_type" : "skill",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : "single_out"
          }
       },
 	  {
@@ -1578,6 +1658,84 @@
          "id" : "GV_Tooltip_SB_CK_Crit_Buffs_5",
          "stat_type" : "upgrade_discount",
          "stat_sub_type" : "shieldbreaker_crit_buffs_5",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+		 }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_Base",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_base",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_1",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_1",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_2",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_2",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_3",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_3",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_4",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_4",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+ 	  {
+         "id" : "GV_Tooltip_SB_Tooltip_Riposte_5",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "sb_riposte_5",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
