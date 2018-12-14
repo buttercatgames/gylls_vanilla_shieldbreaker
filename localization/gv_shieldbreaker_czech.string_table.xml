@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<language id="english">
+	<language id="czech">
 		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[%s vs %d%% HP or less]]></entry>
 		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[Crits Received: %+d%%]]></entry>
 		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[Anticipate]]></entry>
@@ -36,14 +36,14 @@
 
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_base"><![CDATA[Self:
 1 {colour_start|block}Block{colour_end}
-Activates {colour_start|riposte}Riposte{colour_end}:
-Triggers Only Once]]></entry>
+Activates {colour_start|riposte}Riposte{colour_end}
+{colour_start|riposte}Riposte{colour_end}: Triggers Only Once]]></entry>
 		
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_1"><![CDATA[ACC: 90 / DMG: -20%% / CRIT: +2%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_2"><![CDATA[ACC: 95 / DMG: -20%% / CRIT: +3%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_3"><![CDATA[ACC: 100 / DMG: -20%% / CRIT: +4%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_4"><![CDATA[ACC: 105 / DMG: -20%% / CRIT: +5%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_5"><![CDATA[ACC: 110 / DMG: -20%% / CRIT: +6%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_1"><![CDATA[{colour_start|riposte}Riposte{colour_end}: ACC: 90 / DMG: -20%% / CRIT: +2%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_2"><![CDATA[{colour_start|riposte}Riposte{colour_end}: ACC: 95 / DMG: -20%% / CRIT: +3%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_3"><![CDATA[{colour_start|riposte}Riposte{colour_end}: ACC: 100 / DMG: -20%% / CRIT: +4%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_4"><![CDATA[{colour_start|riposte}Riposte{colour_end}: ACC: 105 / DMG: -20%% / CRIT: +5%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_5"><![CDATA[{colour_start|riposte}Riposte{colour_end}: ACC: 110 / DMG: -20%% / CRIT: +6%%]]></entry>
 
 	</language>
 </root>
