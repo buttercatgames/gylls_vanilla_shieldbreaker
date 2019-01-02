@@ -8,7 +8,18 @@ Processing Map Files files...
 
 -------------------------------------------------------------------------------
 Running Localization...
-Parsing localization/gv_shieldbreaker.string_table.xml
+Parsing localization/gv_shieldbreaker_brazilian.string_table.xml
+Parsing localization/gv_shieldbreaker_czech.string_table.xml
+Parsing localization/gv_shieldbreaker_english.string_table.xml
+Parsing localization/gv_shieldbreaker_french.string_table.xml
+Parsing localization/gv_shieldbreaker_german.string_table.xml
+Parsing localization/gv_shieldbreaker_italian.string_table.xml
+Parsing localization/gv_shieldbreaker_koreana.string_table.xml
+Parsing localization/gv_shieldbreaker_koreanb.string_table.xml
+Parsing localization/gv_shieldbreaker_polish.string_table.xml
+Parsing localization/gv_shieldbreaker_russian.string_table.xml
+Parsing localization/gv_shieldbreaker_schinese.string_table.xml
+Parsing localization/gv_shieldbreaker_spanish.string_table.xml
 
 Building Languages
 Exporting .loc files
@@ -23,20 +34,49 @@ No unchanged files detected, directly uploading data directory.
 -------------------------------------------------------------------------------
 Modded files...
 
+audio/secondary_banks/gv_shieldbreaker.bank
+campaign/provision/gv_shieldbreaker.provision.json
 heroes/shieldbreaker/shieldbreaker.ability.captivate.png
 heroes/shieldbreaker/shieldbreaker.ability.expose.png
 heroes/shieldbreaker/shieldbreaker.ability.puncture.png
 heroes/shieldbreaker/shieldbreaker.ability.sway.png
 heroes/shieldbreaker/shieldbreaker.art.darkest
 heroes/shieldbreaker/shieldbreaker.info.darkest
+raid/camping/shieldbreaker.camping_skills.json
 shared/buffs/gv_heroes_shieldbreaker.buffs.json
+audio/gv_heroes_shieldbreaker.campaign.guid_overrides.json
+audio/gv_heroes_shieldbreaker.campaign.load_order.json
+colours/gv_shieldbreaker.colours.darkest
 effects/gv_heroes_shieldbreaker.effects.darkest
+localization/1509926649_brazilian.loc
+localization/1509926649_czech.loc
 localization/1509926649_english.loc
-localization/gv_shieldbreaker.string_table.xml
+localization/1509926649_french.loc
+localization/1509926649_german.loc
+localization/1509926649_italian.loc
+localization/1509926649_koreana.loc
+localization/1509926649_koreanb.loc
+localization/1509926649_polish.loc
+localization/1509926649_russian.loc
+localization/1509926649_schinese.loc
+localization/1509926649_spanish.loc
+localization/gv_shieldbreaker_brazilian.string_table.xml
+localization/gv_shieldbreaker_czech.string_table.xml
+localization/gv_shieldbreaker_english.string_table.xml
+localization/gv_shieldbreaker_french.string_table.xml
+localization/gv_shieldbreaker_german.string_table.xml
+localization/gv_shieldbreaker_italian.string_table.xml
+localization/gv_shieldbreaker_koreana.string_table.xml
+localization/gv_shieldbreaker_koreanb.string_table.xml
+localization/gv_shieldbreaker_polish.string_table.xml
+localization/gv_shieldbreaker_russian.string_table.xml
+localization/gv_shieldbreaker_schinese.string_table.xml
+localization/gv_shieldbreaker_spanish.string_table.xml
+shared/gv_shieldbreaker.rules.json
 modfiles.txt
 preview_icon.png
 project.xml
 
-Submitting.................................................................................Submitted.
+Submitting.........................................................................Submitted.
 Saving project file C:\DarkestDungeon\mods\gylls_vanilla_shieldbreaker\project.xml
 

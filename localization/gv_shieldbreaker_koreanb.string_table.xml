@@ -7,7 +7,7 @@
 		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[Anticipate]]></entry>
 		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[%s if {colour_start|guard}Guarding{colour_end}]]></entry>
 		
-		<entry id="buff_stat_tooltip_ignore_protection"><![CDATA[%d%% PROT Piercing]]></entry>
+		
 		
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_cannot_crit"><![CDATA[Cannot CRIT]]></entry>
 		
