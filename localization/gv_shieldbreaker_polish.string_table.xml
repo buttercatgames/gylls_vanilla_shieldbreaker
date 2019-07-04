@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<language id="polish">
-		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[%s vs %d%% HP or less]]></entry>
+		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[{?effect}%s vs {?amount}%d%% HP or less]]></entry>
 		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[Crits Received: %+d%%]]></entry>
 		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[Anticipate]]></entry>
 		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[Anticipate]]></entry>
