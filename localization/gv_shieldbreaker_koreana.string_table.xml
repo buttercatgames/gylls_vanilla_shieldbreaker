@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<language id="koreana">
-		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[대상 체력이 {?amount}%d%% 이하 {?effect}%s]]></entry>
-		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[받는 치명타: %+d%%]]></entry>
 		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[예측]]></entry>
 		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[예측]]></entry>
-		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[{colour_start|guard}보호 중{colour_end} 이라면 %s]]></entry>
 		
-		
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_cannot_crit"><![CDATA[치명타 발생 안함]]></entry>
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_disable_tag"><![CDATA[살해의 카타르시스 비활성화!]]></entry>
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_1"><![CDATA[대상이 체력을 10%% 씩 잃은 것 마다 +5%% 치명타 (최대 +40%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_2"><![CDATA[대상이 체력을 10%% 씩 잃은 것 마다 +6%% 치명타 (최대 +48%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_3"><![CDATA[대상이 체력을 10%% 씩 잃은 것 마다 +7%% 치명타 (최대 +56%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_4"><![CDATA[대상이 체력을 10%% 씩 잃은 것 마다 +8%% 치명타 (최대 +64%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_5"><![CDATA[대상이 체력을 10%% 씩 잃은 것 마다 +10%% 치명타 (최대 +80%%)]]></entry>
-		
-		<entry id="buff_stat_tooltip_stress_heal_received_percent_hero_crit"><![CDATA[치명타로 회복하는 {colour_start|stress}스트레스{colour_end} +%d%%]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_received_percent_hero_killing_blow"><![CDATA[죽이는 걸로 회복하는 {colour_start|stress}스트레스{colour_end} +%d%%]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_percent_hero_crit"><![CDATA[치명타로 회복하는 {colour_start|stress}스트레스{colour_end} +%d%%]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_percent_hero_killing_blow"><![CDATA[죽이는 걸로 회복하는 {colour_start|stress}스트레스{colour_end} +%d%%]]></entry>
-
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_stress"><![CDATA[{colour_start|stress}스트레스{colour_end} 기술 비활성화!]]></entry>
-		
-		<entry id="buff_stat_tooltip_hp_dot_poison_amount_percent"><![CDATA[{colour_start|blight}중독{colour_end} 피해량 %d%%]]></entry>		
-		
-		<entry id="buff_rule_tooltip_target_hpabove"><![CDATA[대상의 체력이 X 이상이면 %s]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_disable_tag"><![CDATA[뱀의 형상 사용 불가]]></entry>
+		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_guard"><![CDATA[보호 기술 비활성화!]]></entry>
 		
 		<entry id="buff_stat_tooltip_hp_dot_poison_duration_received_percent"><![CDATA[받는 중독 지속시간 %d%%]]></entry>
 		
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_cooldown_1"><![CDATA[{colour_start|notable}재사용 대기시간: 1 턴{colour_end}]]></entry>
+		
 		<entry id="effect_health_damage_blocks_format"><![CDATA[{colour_start|block}피해 차단{colour_end} %d]]></entry>
-
+		
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_base"><![CDATA[자신에게:
 {colour_start|block}피해 차단{colour_end} 1 회
 {colour_start|riposte}반격{colour_end} 활성화
@@ -44,7 +23,6 @@
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_3"><![CDATA[{colour_start|riposte}반격{colour_end}: 명중: 100 / 피해: -20%% / 치명타: +4%%]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_4"><![CDATA[{colour_start|riposte}반격{colour_end}: 명중: 105 / 피해: -20%% / 치명타: +5%%]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_5"><![CDATA[{colour_start|riposte}반격{colour_end}: 명중: 110 / 피해: -20%% / 치명타: +6%%]]></entry>
-
 	</language>
 </root>
 

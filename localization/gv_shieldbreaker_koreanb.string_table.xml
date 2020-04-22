@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<language id="koreanb">
-		<entry id="buff_rule_tooltip_target_hpbelow"><![CDATA[{?effect}%s vs {?amount}%d%% HP or less]]></entry>
-		<entry id="buff_stat_tooltip_crit_received_chance"><![CDATA[Crits Received: %+d%%]]></entry>
 		<entry id="combat_skill_name_shieldbreaker_expose"><![CDATA[Anticipate]]></entry>
 		<entry id="upgrade_tree_name_shieldbreaker.expose"><![CDATA[Anticipate]]></entry>
-		<entry id="buff_rule_tooltip_is_guarding"><![CDATA[%s if {colour_start|guard}Guarding{colour_end}]]></entry>
 		
-		
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_sb_cannot_crit"><![CDATA[Cannot CRIT]]></entry>
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_disable_tag"><![CDATA[Cathartic Kill Disabled!]]></entry>
-		
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_1"><![CDATA[+5%% CRIT for each 10%% Target HP Missing (Max +40%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_2"><![CDATA[+6%% CRIT for each 10%% Target HP Missing (Max +48%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_3"><![CDATA[+7%% CRIT for each 10%% Target HP Missing (Max +56%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_4"><![CDATA[+8%% CRIT for each 10%% Target HP Missing (Max +64%%)]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_crit_buffs_5"><![CDATA[+10%% CRIT for each 10%% Target HP Missing (Max +80%%)]]></entry>
-		
-		<entry id="buff_stat_tooltip_stress_heal_received_percent_hero_crit"><![CDATA[+%d%% {colour_start|stress}Stress{colour_end} Healing Received from Crits]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_received_percent_hero_killing_blow"><![CDATA[+%d%% {colour_start|stress}Stress{colour_end} Healing Received from Killing Blows]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_percent_hero_crit"><![CDATA[+%d%% {colour_start|stress}Stress{colour_end} Healing Received from Crits]]></entry>
-		<entry id="buff_stat_tooltip_stress_heal_percent_hero_killing_blow"><![CDATA[+%d%% {colour_start|stress}Stress{colour_end} Healing Received from Killing Blows]]></entry>
-
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_stress"><![CDATA[{colour_start|stress}Stress{colour_end} Skills Disabled!]]></entry>
-		
-		<entry id="buff_stat_tooltip_hp_dot_poison_amount_percent"><![CDATA[%d%% {colour_start|blight}Blight{colour_end} Amount]]></entry>		
-		
-		<entry id="buff_rule_tooltip_target_hpabove"><![CDATA[%s if target HP above X]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_shieldbreaker_disable_tag"><![CDATA[Serpent Sway Disabled!]]></entry>
+		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_guard"><![CDATA[Guard Disabled!]]></entry>
 		
 		<entry id="buff_stat_tooltip_hp_dot_poison_duration_received_percent"><![CDATA[%d%% Blight Duration Received]]></entry>
 		
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_cooldown_1"><![CDATA[{colour_start|notable}Cooldown: 1 rd{colour_end}]]></entry>
+		
 		<entry id="effect_health_damage_blocks_format"><![CDATA[%d {colour_start|block}Blocks{colour_end}]]></entry>
-
+		
 		<entry id="buff_stat_tooltip_upgrade_discount_sb_riposte_base"><![CDATA[Self:
 1 {colour_start|block}Block{colour_end}
 Activates {colour_start|riposte}Riposte{colour_end}
